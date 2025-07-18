@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Result = () => {
     const location = useLocation()
     const { questions } = location.state
-    const navigate =useNavigate()
+    const navigate = useNavigate()
     console.log(questions)
     let c = 0;
     for (let i = 0; i < questions.length; i++) {
@@ -37,8 +37,8 @@ const Result = () => {
             </div>
             <br />
             <p className="text-2xl text-bold">You scored {c} out of {questions.length}</p>
-                <Button onClick={(e) => {navigate(-1)}}>Go back</Button>
-            
+            <Button onClick={() => { navigate(-1) }}>Go back</Button>
+
         </div>
     )
 }
