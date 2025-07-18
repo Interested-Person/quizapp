@@ -3,11 +3,15 @@ import QuestionBlock from './QuestionBlock'
 
 const Home = () => {
     return (
-        <>
-            <h1 className='text-4xl font-bold underline'>Home</h1>
-            <br />
-            <QuestionBlock />
-        </>
+
+        <div
+            className='bg-amber-50  h-[calc(100vh-4rem)]'>
+            <div
+                className=' flex h-full w-full items-center justify-center'
+            >
+                <QuestionBlock  />
+            </div>
+        </div>
     )
 }
 
