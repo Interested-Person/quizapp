@@ -1,10 +1,10 @@
 import React from "react";
 import {
-    Carousel,
-    CarouselContent,
+    //Carousel,
+    //CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
+    //CarouselNext,
+    //CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 
