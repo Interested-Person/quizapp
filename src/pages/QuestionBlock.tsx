@@ -52,17 +52,19 @@ const QuestionBlock = () => {
     return (
         <div>
             <Carousel className="w-full max-w-xs">
-
+                <span className="mx-4 text-gray-900 opacity-50 text-sm md:hidden ">
+                    Please swipe for next question
+                </span>
                 <CarouselContent>
                     {questions.map((question_obj) => (
                         <QuestionCard onAnswerChange={handleAnswerChange} num={question_obj.question_num} question={question_obj.question} answer={question_obj.answer} />
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="hidden md:block"/>
+                <CarouselNext  className="hidden md:block"/>
             </Carousel>
             <form action="">
-                <Button onClick={(e) => handleSubmit(e)}>Submit</Button>
+                <Button className="mx-2" onClick={(e) => handleSubmit(e)}>Submit</Button>
             </form>
         </div>
     )
