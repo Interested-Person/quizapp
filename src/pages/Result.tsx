@@ -23,12 +23,12 @@ const Result = () => {
             <br />
             <div>
                 {questions.map((question_ob: question, index: number) => (
-                    question_ob.response_num == question_ob.answer_num ? (<div className="flex">Question  {question_ob.question_num}    is correct
+                    question_ob.response_num == question_ob.answer_num ? (<div key={index} className="flex">Question  {question_ob.question_num}    is correct
                         <img
                             className="w-4 mx-[1.36rem] animate-bounce"
                             style={{ animationDelay: `${index * 50}ms` }}
                             src={tick} /></div>)
-                        : (<div className="flex">Question   {question_ob.question_num}   is incorrect
+                        : (<div key={index} className="flex">Question   {question_ob.question_num}   is incorrect
                             <img key={index}
                                 className="w-4 mx-2 animate-bounce"
                                 style={{ animationDelay: `${index * 50}ms` }}
