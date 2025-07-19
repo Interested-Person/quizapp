@@ -67,9 +67,9 @@ app.use((0, cors_1.default)());
 app.get('/questions', (req, res) => {
     res.json(questions);
 });
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, '../dist/index.html'))
-// }) //THIS BREAKS THE CODE FOR SOME REASON... BUT THE REACT APP IS SERVED WITHOUT NEEDING THIS, WHY???
+app.get('/', (req, res) => {
+    res.sendFile(path_1.default.join(__dirname, '../dist/index.html'));
+});
 app.listen(PORT, () => {
-    console.log(`Example app listening on PORTTTTTTT ${PORT}`);
+    console.log(`Example app listening on POPRTTTTTTT ${PORT}`);
 });
