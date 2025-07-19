@@ -1,4 +1,4 @@
-import { useLocation, useNavigation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import ShinyText from "./ui/ShinyText";
 
 export default function Navbar(){

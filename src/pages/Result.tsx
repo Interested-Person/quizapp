@@ -18,7 +18,7 @@ const Result = () => {
         }
     }
     return (
-        <div className="bg-amber-50 p-4 h-[calc(100vh-4rem)]">
+        <div className="bg-amber-50 p-4 h-[calc(100vh-16rem)]">
             <p className="text-2xl">So... here's how you did.</p>
             <br />
             <div>
@@ -37,7 +37,7 @@ const Result = () => {
             </div>
             <br />
             <p className="text-2xl text-bold">You scored {c} out of {questions.length}</p>
-                <Button onClick={(e) => {navigate(-1)}}>Go back</Button>
+                <Button onClick={(e) => {navigate(-1)}}></Button>
             
         </div>
     )
